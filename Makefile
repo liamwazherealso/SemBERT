@@ -7,4 +7,4 @@ docker-rm:
 	docker container rm sembert
 docker-restart: docker-rm docker-run docker-exec
 docker-build:
-	docker build --tag sembert:latest .
+	(cd docker && docker build --tag sembert:latest .)
